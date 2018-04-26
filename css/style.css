@@ -1,4 +1,150 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
+  background-color: #d6d4d6;
   font-size: 10px;
+  display: block;
+}
+
+section {
+  margin: 20px 0px;
+  background-color: #d6d4d6;
+}
+
+@media screen and (min-width: 575px) {
+  section {
+    margin: 0px auto;
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  section {
+    margin: 0px auto;
+    padding: 0px 120px;
+  }
+}
+
+.title {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.75em;
+  letter-spacing: 2.5px;
+  margin: 30px;
+}
+
+.locations {
+  max-width: 100%;
+  align-content: center;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 575px) {
+  .locations {
+    column-count: 2;
+    column-width: 50%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .locations {
+    column-count: 4;
+    column-width: 22%;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .locations {
+    column-count: 4;
+    column-width: 25%;
+  }
+}
+
+.preview h1 {
+  font-family: serif;
+  font-size: 2em;
+  text-transform: none;
+  text-align: left;
+  letter-spacing: 0px;
+  padding: 15px;
+  position: relative;
+}
+
+@media screen and (min-width: 575px) {
+  .preview h1 {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .preview h1 {
+    padding: 15px;
+  }
+}
+
+.preview {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 575px) {
+  .preview {
+    width: 100%;
+    height: 215px;
+    margin: 0px auto 10px auto;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .preview {
+    width: 100%;
+    height: 130px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .preview {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+  }
+}
+
+.baku {
+  background-image: url('../images/baku.jpg');
+}
+
+/* @media screen and (min-width: 991px) {
+  .baku {
+    margin-left: 50px;
+  }
+} */
+
+/* @media screen and (min-width: 991px) {
+  .madrid,
+  .rome {
+    margin-right: 60px;
+  }
+} */
+
+.london {
+  background-image: url('../images/london.png');
+}
+
+.madrid {
+  background-image: url('../images/madrid.jpg');
+}
+
+.rome {
+  background-image: url('../images/rome.jpg');
 }
